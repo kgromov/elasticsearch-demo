@@ -8,3 +8,6 @@
 `
 * delete index:
 `curl -X DELETE "localhost:9200/${indexName}?pretty"`
+
+## TODO - move to Docker/docker compose
+`docker run -p 9200:9200 -p 9300:9300 -e dicsovery.type="single-node" docker/elasticsearch/elasticsearch:7.13.3`
